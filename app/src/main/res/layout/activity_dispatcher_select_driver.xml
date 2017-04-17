@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.loadingOrderHistory.LoadingOrderRecordActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:background="@drawable/frame_search_normal"
+            android:id="@+id/carNumber"
+            android:hint="车牌号"
+            android:textColor="@color/colorBlack"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:layout_height="wrap_content" />
+        <Button
+
+            android:text="查询"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/search"
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorHorizontalLine"
+        android:layout_height="1dp"/>
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/project_srl"
+        app:srl_direction="both"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@id/listView"
+            android:layout_marginTop="10dp"
+            android:divider="#00000000"
+            android:dividerHeight="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+</LinearLayout>

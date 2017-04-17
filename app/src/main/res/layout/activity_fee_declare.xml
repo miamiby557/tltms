@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.loadingOrder.LoadingOrderActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/radius"
+        android:layout_marginRight="@dimen/radius"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/frame_search_normal"
+                android:id="@+id/edtLdOrderNo"
+                android:layout_width="0dp"
+                android:hint="配载单号"
+                android:textColor="@color/colorBlack"
+                android:inputType="number"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/search"
+                android:text="查找"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_style"
+            android:layout_height="95dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/ldOrderNo"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:id="@+id/createTime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/originCity"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:id="@+id/destCity"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/totalPackageQty"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/totalVolume"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/totalWeight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+
+            <View
+                style="@style/Horizontal_Line_Style" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:text="运单列表"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="("
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text="0"
+            android:id="@+id/count"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <TextView
+            android:text=")"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

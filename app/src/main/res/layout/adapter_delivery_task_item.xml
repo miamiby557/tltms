@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.loadingOrder.LoadingOrderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/line"
+            android:background="@drawable/frame_search_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tsOrderNo"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_width="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/status"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/packageQty"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/volume"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/weight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/delete"
+                    android:textColor="@color/act_red"
+                    android:text="删除"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

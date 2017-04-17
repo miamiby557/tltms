@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+    <!-- 以下定义字体大小 -->
+
+    <!--导航栏字体大小-->
+    <dimen name="navigation_text_size">20sp</dimen>
+
+    <!--标题字体大小-->
+    <dimen name="content_title_text_size">18sp</dimen>
+
+    <!--内容字体大小-->
+    <dimen name="content_text_size">16sp</dimen>
+
+    <!--内容字体间距-->
+    <dimen name="content_text_margin">8dp</dimen>
+
+    <dimen name="radius">6dp</dimen>
+
+</resources>

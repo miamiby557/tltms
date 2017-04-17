@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.loadingOrder.LoadingOrderActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/line"
+            android:background="@drawable/frame_search_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/ldOrderNo"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="2"
+                    android:id="@+id/createTime"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/status"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:gravity="center|right"
+                    android:layout_height="wrap_content"
+                    style="@style/LoadingOrderStyle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/totalPackageQty"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/totalVolume"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/totalWeight"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/originCity"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/destCity"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@+id/line"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/count"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/line"
+            android:layout_height="match_parent">
+            <ListView
+                android:layout_width="match_parent"
+                android:id="@+id/listView"
+                android:divider="#00000000"
+                android:dividerHeight="18dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="50dp"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/deepskyblue"
+            android:orientation="horizontal"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/add"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/add"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/cancel"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

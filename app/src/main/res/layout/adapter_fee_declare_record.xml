@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.FeeDeclare.FeeDeclareRecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:background="@drawable/frame_style"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <TextView
+                    android:id="@+id/tsOrderNo"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/startDate"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/LoadingOrderStyle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/startPlace"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="总申报费:"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp"
+                    />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/totalFee"
+                    android:layout_height="wrap_content"
+                    android:layout_width="0dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_height="30dp">
+                <Button
+                    android:id="@+id/cancel"
+                    android:text="取消"
+                    android:textColor="@color/red"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    />
+                <Button
+                    android:id="@+id/modify"
+                    android:text="编辑"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    />
+                <Button
+                    android:text="确认"
+                    android:textColor="@color/color_black"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/confirm"
+                    android:layout_height="50dp"
+                    android:layout_width="0dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">天图物流运输管理系统</string>
+    <string name="title_home">天图物流运输管理系统</string>
+    <string name="serverSetting">服务器设置</string>
+    <string name="locationTimeSetting">发送坐标时间设置</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="driver">司机</string>
+    <string name="dispatcher">调度</string>
+    <string name="setting">设置</string>
+    <string name="create">创建</string>
+    <string name="fee_create">申报</string>
+    <string name="update">更新</string>
+    <string name="loadingOrder">配载单</string>
+    <string name="dispatcherLoadingOrder">配载单</string>
+    <string name="signUp">签收</string>
+    <string name="carFollow">车辆跟踪</string>
+    <string name="orderSearch">订单查询</string>
+    <string name="expensesDeclare">费用申报</string>
+    <string name="history">历史记录</string>
+    <string name="hintSignMan">签收人</string>
+    <string name="hintIdCard">签收人身份证号</string>
+    <string name="hintSignDate">签收时间</string>
+    <string name="hintReMark">备注</string>
+    <string name="cbException">添加异常信息</string>
+    <string name="hintException">请输入异常信息</string>
+    <string name="btnSubmit">提交</string>
+    <string name="btnChoosePic">拍照</string>
+    <string name="edtSearch">请输入单号进行搜索</string>
+    <string name="btnStartDate">开始日期</string>
+    <string name="btnEndDate">结束日期</string>
+    <string name="orderDate">运单日期</string>
+    <string name="next">下一步</string>
+    <string name="add">加单</string>
+    <string name="delete">删除</string>
+    <string name="cancel">取消</string>
+    <string name="driver_phone">司机电话</string>
+    <string name="fee">费用</string>
+    <string name="remark">备注</string>
+    <string name="search">配载单号,司机,车辆</string>
+    <string name="location">车牌号,司机,配载单,运单</string>
+    <string name="feeDeclare">申报</string>
+    <string name="version">版本更新</string>
+    <string-array name="type">
+        <item>c语言</item>
+        <item>java </item>
+        <item>php</item>
+        <item>xml</item>
+        <item>html</item>
+    </string-array>
+
+    <string-array name="citys">
+        <item>广州市</item>
+        <item>北京市</item>
+        <item>上海市</item>
+    </string-array>
+
+</resources>

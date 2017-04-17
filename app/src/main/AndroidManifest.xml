@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.xyy.tltms.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!--允许访问振动设备-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!--屏幕保持唤醒 不锁屏-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--允许应用程序更改主屏幕中的设置和快捷方式-->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 用于优化GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+
+    <application
+        android:name=".tltms.TLApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 百度地图SDK的KEY -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="HvyimDlWmnL4RAuOATG3DsuYdOgw9bz6" />
+
+        <activity
+            android:name=".tltms.MainActivity"
+            android:label="@string/app_name">
+
+        </activity>
+        <activity
+            android:name=".tltms.driver.DriverActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.DispatcherActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherLoadingOrderRecordActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherOrderCreateActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherOrderModifyActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherOrderViewActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherOrderAddTransportOrderActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherBasicInfoActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.DispatcherSelectDriverActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.dispatcher.QuickOrderCreateActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareSelectActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareCreateActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareRecordActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareCompletedRecordActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareModifyActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.FeeDeclare.FeeDeclareViewActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.loadingOrder.LoadingOrderActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.loadingOrder.LoadingOrderViewActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.loadingOrderHistory.LoadingOrderRecordActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.loadingOrderHistory.LoadMoreLdOrderRecordActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.baiduMap.CarLocationActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.TransportOrder.TransportOrderSelectActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.signUp.SignUpActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.person.PersonalActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.SettingActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.person.UpdatePwdActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name=".tltms.driver.LocationSendTimeActivity"
+            android:label=""
+            android:theme="@style/HomeTheme"
+            />
+        <activity
+            android:name="cn.finalteam.rxgalleryfinal.ui.activity.MediaActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/HomeTheme"
+            />
+
+        <service android:name=".service.LbsService" />
+
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <receiver android:name=".receiver.ApkInstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity android:name=".tltms.LoginActivity">
+        </activity>
+        <activity android:name=".tltms.LoadingActivity"
+            android:theme="@style/HomeTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

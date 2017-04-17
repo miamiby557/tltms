@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.FeeDeclare.FeeDeclareRecordActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/create_list"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@color/colorHorizontalLine"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="待确认"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="("
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="0"
+                    android:id="@+id/create_count"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text=")"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <ListView
+                android:id="@+id/createListView"
+                android:layout_marginTop="10dp"
+                android:divider="#00000000"
+                android:dividerHeight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/verity_list"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorHorizontalLine"
+                android:layout_height="40dp">
+                <TextView
+                    android:text="审批中"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="("
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text="0"
+                    android:id="@+id/verity_count"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:text=")"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="20dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <ListView
+                android:id="@+id/verityListView"
+                android:layout_marginTop="10dp"
+                android:divider="#00000000"
+                android:dividerHeight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorHorizontalLine"
+        android:layout_height="40dp">
+        <TextView
+            android:text="申报完成"
+            android:layout_marginLeft="6dp"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/loadMore"
+            android:text="查看更多"
+            android:textColor="@color/colorBlack"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/completedListView"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".tltms.driver.person.PersonalActivity">
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="  名字"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="  角色"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="  手机号码"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+                android:text="  车牌号"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/carNumber"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:id="@+id/car_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:text="  公司"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/company"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorBlack"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorWhite"
+            android:layout_height="match_parent">
+            <TextView
+
+                android:text="  版本号"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:layout_height="40dp" />
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:layout_height="40dp" />
+        </LinearLayout>
+   </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/updatePwd"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/frame_search_normal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="修改密码"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|center"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="40dp" />
+            <TextView
+                android:text=">"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/checkVersion"
+            android:layout_marginTop="70dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/frame_search_normal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="检查更新"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|center"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="40dp" />
+            <TextView
+                android:text=">"
+                android:textSize="30dp"
+                android:gravity="center_horizontal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/loginOut"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="退出登录"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:background="@color/red"
+                android:layout_width="0dp"
+                android:layout_weight="6"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

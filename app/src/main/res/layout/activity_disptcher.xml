@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="@string/title_home"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/navigation_text_size" />
+
+                </android.support.v7.widget.Toolbar>
+
+            </android.support.design.widget.AppBarLayout>
+
+            <LinearLayout
+                android:id="@+id/personal"
+                android:background="@drawable/frame_search_normal"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp">
+                        <TextView
+                            android:id="@+id/name"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                        <TextView
+                            android:id="@+id/vehicleNo"
+                            android:gravity="center_vertical"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/phone"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:id="@+id/company"
+                        android:gravity="center_vertical"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text=">"
+                        android:gravity="center"
+                        android:textSize="30dp"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:background="@color/timepicker_line"
+                android:layout_height="1dp"/>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:id="@+id/loadingOrderList"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/frame_search_normal"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/list"
+                        android:layout_weight="4"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:text="配载单列表"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/createLdOrder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/frame_search_normal"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/quick_order"
+                        android:layout_weight="4"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:text="创建配载单"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/quickOrder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:background="@drawable/frame_search_normal"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/fee_declare"
+                        android:layout_weight="4"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:text="快速开单"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+                <LinearLayout
+                    android:id="@+id/findOrder"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/frame_search_normal"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/find"
+                        android:layout_weight="4"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:text="运单查询"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:id="@+id/carLocation"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/frame_search_normal"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:src="@drawable/map"
+                        android:layout_weight="4"
+                        android:layout_height="0dp" />
+                    <TextView
+                        android:text="车辆跟踪"
+                        android:layout_width="match_parent"
+                        android:gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:layout_height="0dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

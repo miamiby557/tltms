@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="费用科目:"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="5"
+                android:layout_height="match_parent" />
+            <Spinner
+                android:id="@+id/type"
+                android:background="@drawable/frame_search_normal"
+                android:layout_width="0dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="center"
+                android:spinnerMode="dropdown"
+                android:layout_weight="5"
+                android:layout_height="wrap_content">
+
+            </Spinner>
+            <TextView
+                android:text="申请金额:"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="match_parent" />
+            <EditText
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/frame_search_normal"
+                android:id="@+id/fee"
+                android:textColor="@color/colorBlack"
+                android:inputType="numberDecimal"
+                android:hint="@string/fee"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="元"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tips"
+                android:text="申报科目:0条,总申报费:0元"
+                android:gravity="left|center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <Button
+                android:id="@+id/add"
+                android:textColor="@color/color_black"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:text="添加"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorHorizontalLine"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+            <ListView
+                android:id="@id/listView"
+                android:divider="#00000000"
+                android:dividerHeight="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="80dp">
+            <EditText
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/frame_search_normal"
+                android:id="@+id/remark"
+                android:textColor="@color/colorBlack"
+                android:gravity="top"
+                android:hint="@string/remark"
+                android:layout_width="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="80dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnChoosePic"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btnChoosePic" />
+        </LinearLayout>
+
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:clipToPadding="false"
+            android:descendantFocusability="blocksDescendants"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:horizontalSpacing="2dp"
+            android:numColumns="3"
+            android:padding="8dp"
+            android:verticalSpacing="2dp" />
+    </LinearLayout>
+</LinearLayout>

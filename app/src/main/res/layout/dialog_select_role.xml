@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="50dp"
+    android:layout_marginRight="50dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/common_dialog_title_txt"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:inputType="numberDecimal"
+        style="@style/blackText"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="选择角色" />
+    <TextView
+        android:id="@+id/driver"
+        android:background="@color/account_line"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        style="@style/blackText"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="司机" />
+    <TextView
+        android:id="@+id/dispatcher"
+        android:background="@color/account_line"
+        android:layout_width="match_parent"
+        android:inputType="numberDecimal"
+        style="@style/blackText"
+        android:textSize="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="调度" />
+
+
+</LinearLayout>
