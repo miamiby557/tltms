@@ -148,6 +148,7 @@ public class LoginActivity extends BaseActivity {
                         TLApplication.getInstance().type = "司机";
                         openActivity(DriverActivity.class);
                         finish();
+
                     }else if(roleCodes.contains("ROLE_DD")){
                         //调度
                         TLApplication.getInstance().type = "调度";
